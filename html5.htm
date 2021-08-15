@@ -1,31 +1,132 @@
 <!DOCTYPE html>
-
-<!-- 
-https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5 
-
-
-    Semantics: allowing you to describe more precisely what your content is.
-    Connectivity: allowing you to communicate with the server in new and innovative ways.
-    Offline and storage: allowing webpages to store data on the client-side locally and operate offline more efficiently.
-    Multimedia: making video and audio first-class citizens in the Open Web.
-    2D/3D graphics and effects: allowing a much more diverse range of presentation options.
-    Performance and integration: providing greater speed optimization and better usage of computer hardware.
-    Device access: allowing for the usage of various input and output devices.
-    Styling: letting authors write more sophisticated themes.
-
--->
-
-<!--
-Sections and outlines in HTML5
-    A look at the new outlining and sectioning elements in HTML5: <section>, <article>, <nav>, <header>, <footer> and <aside>.
--->
-
 <body>body
 
 <article>article
     <header>header
     </header>
     <section>section
+    </section>
+    <aside>aside
+    </aside>
+    <nav>nav
+    </nav>
+    <footer>footer
+    </footer>
+</article>
+
+<article>HTML5 Input Types: https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
+    <header>header
+    </header>
+    <section>
+        <table>
+            <tr>
+                <td>email</td><td><input type="email" id="email" name="email" multiple></td>
+            </tr>
+            <tr>
+                <td>search</td><td><input type="search" id="search" name="search"></td>
+            </tr>
+            <tr>
+                <td>tel</td><td><input type="tel" id="tel" name="tel"></td>
+            </tr>
+            <tr>
+                <td></td><td></td>
+            </tr>
+            <input type="url" id="url" name="url">
+            <tr>
+                <td></td><td></td>
+            </tr>
+            <input type="number" name="age" id="age" min="1" max="10" step="2">
+            <tr>
+                <td></td><td></td>
+            </tr>
+            <input type="number" name="change" id="pennies" min="0" max="1" step="0.01">
+            <tr>
+                <td></td><td></td>
+            </tr>
+
+            <label for="price">Choose a maximum house price: </label>
+            <input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
+            <output class="price-output" for="price"></output>
+            <script>
+                const price = document.querySelector('#price');
+                const output = document.querySelector('.price-output');
+
+                output.textContent = price.value;
+
+                price.addEventListener('input', function() {
+                output.textContent = price.value;
+                });
+            </script>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+
+            <input type="datetime-local" name="datetime" id="datetime">
+            <tr>
+                <td></td><td></td>
+            </tr>
+            <input type="month" name="month" id="month">
+            <tr>
+                <td></td><td></td>
+            </tr>
+            <input type="time" name="time" id="time">
+            <tr>
+                <td></td><td></td>
+            </tr>
+            <input type="week" name="week" id="week">
+            <tr>
+                <td></td><td></td>
+            </tr>
+            <label for="myDate">When are you available this summer?</label>
+            <tr>
+                <td></td><td></td>
+            </tr>
+            <input type="date" name="myDate" min="2013-06-01" max="2013-08-31" step="7" id="myDate">
+            <tr>
+                <td></td><td></td>
+            </tr>
+            <input type="color" name="color" id="color">
+            <tr>
+                <td></td><td></td>
+            </tr>
+
+        </table>
+    </section>
+    <section>
+        <tr>
+            <td></td><td><input type="text" id="singlelinetext" name="sltext" value="I'm a text field"></td>
+        </tr>
+        <tr>
+            <td></td><td><input type="text" id="readonlytext" name="rotext" value="I'm a text field" readonly></td>
+        </tr>
+        <tr>
+            <td></td><td><input type="text" id="placeholdertext" name="phtext" placeholder="The purpose of this text box is...." value="I'm a text field"></td>
+        </tr>
+        <tr>
+            <td></td><td><input type="text" id="placeholdertext" name="phtext" placeholder="The purpose of this text box is...." value="I'm a text field"></td>
+        </tr>
+        <tr>
+            <td></td><td><input type="text" id="sizedrtext" name="sizedtext" size="3" placeholder="The purpose of this text box is...." value="I'm a text field"></td>
+        </tr>
+        <tr>
+            <td></td><td><input type="password" id="pwd" name="pwd"></td>
+        </tr>
+        <tr>
+            <td></td><td><input type="hidden" id="hiddentext" name="hiddentext"></td>
+        </tr>
+
+        <!-- Checkable items-->
+        <tr>
+            <td></td><td><input type="checkbox" id="questionOne" name="subscribe" value="yes" checked></td>
+        </tr>
+        <tr>
+            <td></td><td><input type="checkbox" id="size16" name="memorysizegb" value="16" checked>
+                <input type="checkbox" id="size32" name="memorysizegb" value="32" checked>
+                <input type="checkbox" id="size64" name="notinmemorysizegb" value="64" checked></td>
+        </tr>
+        <tr>
+            <td></td><td><input type="radio" id="soup" name="meal" checked></td>
+        </tr>
     </section>
     <aside>aside
     </aside>
