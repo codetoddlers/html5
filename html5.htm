@@ -1,4 +1,41 @@
 <!DOCTYPE html>
+
+<!-- 
+https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5 
+
+
+    Semantics: allowing you to describe more precisely what your content is.
+    Connectivity: allowing you to communicate with the server in new and innovative ways.
+    Offline and storage: allowing webpages to store data on the client-side locally and operate offline more efficiently.
+    Multimedia: making video and audio first-class citizens in the Open Web.
+    2D/3D graphics and effects: allowing a much more diverse range of presentation options.
+    Performance and integration: providing greater speed optimization and better usage of computer hardware.
+    Device access: allowing for the usage of various input and output devices.
+    Styling: letting authors write more sophisticated themes.
+
+-->
+
+<!--
+Sections and outlines in HTML5
+    A look at the new outlining and sectioning elements in HTML5: <section>, <article>, <nav>, <header>, <footer> and <aside>.
+-->
+<style>
+    table, tr, td, article, header, section, aside, nav, footer, body{
+        border:1px solid blue;
+    }
+     article, header, section, aside, nav, footer{
+        border:2px solid green;
+    }
+    header, footer{
+        border:5px dotted turquoise;
+    }
+    footer{
+        border:5px dashed fuchsia ;
+    }
+    body{
+        border:5px ridge orangered;
+    }
+</style>
 <body>body
 
 <article>article
@@ -14,10 +51,13 @@
     </footer>
 </article>
 
-<article>HTML5 Input Types: https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
+<article>
     <header>header
     </header>
     <section>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms">Forms</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types">HTML5 Input Types</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls">Basic native form controls</a>
         <table>
             <tr>
                 <td>email</td><td><input type="email" id="email" name="email" multiple></td>
@@ -93,6 +133,7 @@
         </table>
     </section>
     <section>
+        <table>
         <tr>
             <td></td><td><input type="text" id="singlelinetext" name="sltext" value="I'm a text field"></td>
         </tr>
@@ -127,6 +168,7 @@
         <tr>
             <td></td><td><input type="radio" id="soup" name="meal" checked></td>
         </tr>
+        </table>
     </section>
     <aside>aside
     </aside>
