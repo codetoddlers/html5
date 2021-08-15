@@ -23,14 +23,17 @@ Sections and outlines in HTML5
     table, tr, td, article, header, section, aside, nav, footer, body{
         border:1px solid blue;
     }
-     article, header, section, aside, nav, footer{
+    article, header, section, aside, nav, footer{
         border:2px solid green;
+        background-color: yellowgreen;
     }
     header, footer{
         border:5px dotted turquoise;
+        background-color: slateblue;
     }
     footer{
         border:5px dashed fuchsia ;
+        background-color: yellow;
     }
     body{
         border:5px ridge orangered;
@@ -71,22 +74,20 @@ Sections and outlines in HTML5
             <tr>
                 <td></td><td></td>
             </tr>
-            <input type="url" id="url" name="url">
             <tr>
-                <td></td><td></td>
+                <td>url</td><td><input type="url" id="url" name="url"></td>
             </tr>
-            <input type="number" name="age" id="age" min="1" max="10" step="2">
             <tr>
-                <td></td><td></td>
+                <td>number min max step</td><td><input type="number" name="age" id="age" min="1" max="10" step="2"></td>
             </tr>
-            <input type="number" name="change" id="pennies" min="0" max="1" step="0.01">
             <tr>
-                <td></td><td></td>
+                <td>number min max step</td><td> <input type="number" name="change" id="pennies" min="0" max="1" step="0.01"></td>
             </tr>
-
-            <label for="price">Choose a maximum house price: </label>
-            <input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
-            <output class="price-output" for="price"></output>
+            <tr>
+                <td>range min max step value<label for="price">Choose a maximum house price: </label></td>
+                <td><input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
+                    <output class="price-output" for="price"></output></td>
+            </tr>
             <script>
                 const price = document.querySelector('#price');
                 const output = document.querySelector('.price-output');
@@ -97,37 +98,27 @@ Sections and outlines in HTML5
                 output.textContent = price.value;
                 });
             </script>
-                        <tr>
-                            <td></td><td></td>
-                        </tr>
-
-            <input type="datetime-local" name="datetime" id="datetime">
             <tr>
-                <td></td><td></td>
+                <td>datetime-local</td><td><input type="datetime-local" name="datetime" id="datetime"></td>
             </tr>
             <input type="month" name="month" id="month">
             <tr>
                 <td></td><td></td>
             </tr>
-            <input type="time" name="time" id="time">
             <tr>
-                <td></td><td></td>
+                <td>time</td><td><input type="time" name="time" id="time"></td>
             </tr>
-            <input type="week" name="week" id="week">
             <tr>
-                <td></td><td></td>
+                <td>week</td><td><input type="week" name="week" id="week"></td>
             </tr>
-            <label for="myDate">When are you available this summer?</label>
             <tr>
-                <td></td><td></td>
+                <td><label for="myDate">When are you available this summer?</label></td><td></td>
             </tr>
-            <input type="date" name="myDate" min="2013-06-01" max="2013-08-31" step="7" id="myDate">
             <tr>
-                <td></td><td></td>
+                <td>date min max step</td><td><input type="date" name="myDate" min="2013-06-01" max="2013-08-31" step="7" id="myDate"></td>
             </tr>
-            <input type="color" name="color" id="color">
             <tr>
-                <td></td><td></td>
+                <td>color</td><td><input type="color" name="color" id="color"></td>
             </tr>
 
         </table>
